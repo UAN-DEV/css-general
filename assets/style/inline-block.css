@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color: brown;
+  --main-color: teal;
+  --el-nombers: 4;
+  --block-heigth: 100px;
+  --block-border-thik: 3px;
+  --block-font-size: 20px;
+}
+
+nav {
+  text-align: center;
+  margin: auto;
+  ul {
+    margin: auto;
+    list-style: none;
+  }
+}
+main {
+  .block-container {
+    width: 100%;
+    font-size: 0;
+    .block {
+      display: inline-block;
+      width: calc(100% / var(--el-nombers));
+      text-align: center;
+      border: var(--block-border-thik) solid red;
+      padding: 10px;
+      font-size: var(--block-font-size);
+      background-color: var(--main-color);
+    }
+    /* div:first-child {
+      display: none;
+      visibility: hidden;
+    } */
+  }
+  .str {
+    span {
+      border: 2px solid blue;
+    }
+  }
+  .grad-container > div {
+    width: 70%;
+    height: 100px;
+    border: 3px solid green;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 50px;
+  }
+}
+#gradient1 {
+  background: linear-gradient(teal, cyan, aqua);
+}
+#gradient2 {
+  background: linear-gradient(to left, teal, cyan, aqua);
+}
+#gradient3 {
+  background: linear-gradient(to top left, teal, red, aqua);
+}
+#gradient4 {
+  background: linear-gradient(45deg, teal, yellow, aqua);
+}
+#gradient5 {
+  background: repeating-linear-gradient(-30deg, teal, yellow, aqua 50px);
+}
+#gradient6 {
+  background: repeating-radial-gradient(closest-side at 70% 50%, yellow, aqua, brown);
+}
+#gradient7 {
+  background: linear-gradient(
+    to right,
+    red 15%,
+    orange 15% 30%,
+    yellow 30% 45%,
+    green 45% 60%,
+    blue 60% 75%,
+    indigo 75% 90%,
+    violet 90%
+  );
+}
