@@ -1,3 +1,28 @@
 @import url(./inline-block.css);
 @import url(./user-card.css);
 @import url(./test.css);
+
+ul {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+li {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 15px;
+  overflow: hidden;
+}
+a {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
